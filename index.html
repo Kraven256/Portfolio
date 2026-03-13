@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WAIGA REAGAN | Frontend Developer Portfolio</title>
+    <link rel="preconnect" href="https://api.fontshare.com">
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&f[]=satoshi@400,500,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Particle Canvas -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="logo">
+                <span class="logo-text">WAIGA REAGAN</span>
+            </a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+<p class="hero-greeting">Hello, I'm</p>
+                <h1 class="hero-name">
+                    <span class="name-char">W</span><span class="name-char">A</span><span class="name-char">I</span><span class="name-char">G</span><span class="name-char">A</span>
+                    <span class="name-char"> </span>
+                    <span class="name-char">R</span><span class="name-char">E</span><span class="name-char">A</span><span class="name-char">G</span><span class="name-char">A</span><span class="name-char">N</span>
+                </h1>
+                <div class="hero-role">
+                    <span class="typing-text" id="typing-text"></span>
+                    <span class="cursor">|</span>
+                </div>
+                <p class="hero-tagline">Crafting exceptional digital experiences with cutting-edge web technologies</p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">
+                        <span>View My Work</span>
+                        <i data-lucide="arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <span>Get In Touch</span>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-shapes">
+                    <div class="shape shape-1"></div>
+                    <div class="shape shape-2"></div>
+                    <div class="shape shape-3"></div>
+                    <div class="shape shape-4"></div>
+                </div>
+                <div class="hero-glow"></div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Scroll to explore</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">01. About Me</span>
+                <h2 class="section-title">Passionate Frontend Developer</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="image-frame">
+                        <img src="reagan.jpg" alt="Waiga Reagan Profile Photo" class="profile-photo" loading="lazy">
+                        <div class="image-glow"></div>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <p class="about-intro">
+                        I'm a dedicated frontend developer with a passion for creating beautiful, functional, and user-centered digital experiences. With a keen eye for design and a love for clean code, I transform ideas into reality.
+                    </p>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="5">0</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="50">0</span>
+                            <span class="stat-label">Projects Completed</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="30">0</span>
+                            <span class="stat-label">Happy Clients</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">02. Skills & Expertise</span>
+                <h2 class="section-title">Technologies I Work With</h2>
+            </div>
+            <div class="skills-grid">
+                <!-- Frontend Skills -->
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i data-lucide="layout"></i>
+                        Frontend
+                    </h3>
+                    <div class="skill-cards">
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 10.11c1.03 0 1.87.84 1.87 1.89 0 1-.84 1.85-1.87 1.85-1.03 0-1.87-.85-1.87-1.85 0-1.05.84-1.89 1.87-1.89M7.37 20c.63.38 2.01-.2 3.6-1.7-.52-.59-1.03-1.23-1.51-1.9-.82-.08-1.63-.2-2.4-.36-.51 2.14-.32 3.61.31 3.96m.71-5.74l-.29-.51c-.11.29-.22.58-.29.86.27.06.57.11.88.16l-.3-.51m6.54-.76l.81-1.5-.81-1.5c-.3-.53-.62-1-.91-1.47C13.17 9 12.6 9 12 9c-.6 0-1.17 0-1.71.03-.29.47-.61.94-.91 1.47L8.57 12l.81 1.5c.3.53.62 1 .91 1.47.54.03 1.11.03 1.71.03.6 0 1.17 0 1.71-.03.29-.47.61-.94.91-1.47M12 6.78c-.19.22-.39.45-.59.72h1.18c-.2-.27-.4-.5-.59-.72m0 10.44c.19-.22.39-.45.59-.72h-1.18c.2.27.4.5.59.72M16.62 4c-.62-.38-2 .2-3.59 1.7.52.59 1.03 1.23 1.51 1.9.82.08 1.63.2 2.4.36.51-2.14.32-3.61-.32-3.96m-.7 5.74l.29.51c.11-.29.22-.58.29-.86-.27-.06-.57-.11-.88-.16l.3.51m1.45-7.05c1.47.84 1.63 3.05 1.01 5.63 2.54.75 4.37 1.99 4.37 3.68 0 1.69-1.83 2.93-4.37 3.68.62 2.58.46 4.79-1.01 5.63-1.46.84-3.45-.12-5.37-1.95-1.92 1.83-3.91 2.79-5.38 1.95-1.46-.84-1.62-3.05-1-5.63-2.54-.75-4.37-1.99-4.37-3.68 0-1.69 1.83-2.93 4.37-3.68-.62-2.58-.46-4.79 1-5.63 1.47-.84 3.46.12 5.38 1.95 1.92-1.83 3.91-2.79 5.37-1.95M17.08 12c.34.75.64 1.5.89 2.26 2.1-.63 3.28-1.53 3.28-2.26 0-.73-1.18-1.63-3.28-2.26-.25.76-.55 1.51-.89 2.26"/></svg>
+                            </div>
+                            <span class="skill-name">HTML5</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 18.17l-3.76-2.52 1.23-1.71-4.87-3.35 6.38-.33 1.02-1.63 1.02 1.63 6.38.33-4.87 3.35 1.23 1.71L12 18.17zM4.68 12L12 2l7.32 10L12 22 4.68 12z"/></svg>
+                            </div>
+                            <span class="skill-name">CSS3</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 92%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 3h18v18H3V3zm16.525 13.707c-.131-.821-.666-1.511-2.252-2.155-.552-.259-1.165-.438-1.349-.854-.068-.248-.078-.382-.034-.529.113-.484.687-.629 1.137-.495.293.089.567.318.796.595.574.718.829 1.103 1.003 2.635.121 1.064-.187 2.169-.826 2.934-.855 1.023-2.349 1.561-3.891 1.392-.811-.087-1.565-.448-2.039-.984-.379-.372-.539-.745-.468-1.17.138-1.026 1.233-1.434 2.368-1.384.548.025 1.091.182 1.588.462.503.268.91.646 1.17 1.086.008.015 0 .033-.008.047-.165.398-.539.666-1.282.666h-.036c-.654 0-1.273-.345-1.513-.915-.549-1.306-.753-2.536-.404-3.613.555-1.726 2.083-2.621 3.891-2.439 1.023.096 1.913.513 2.539 1.166.559.576.834 1.252.919 1.762.059.192.07.382.033.555-.071.179-.234.306-.715.306l-2.213-.003zm-6.737-2.834h1.971c.615 0 1.117.475 1.117 1.058 0 .584-.502 1.059-1.117 1.059h-1.971v-2.117zm3.097 4.604c.382.095.612.479.612.935 0 .562-.502 1.023-1.119 1.023h-2.003v-2.057h2.003c.617 0 1.118.459 1.118 1.023 0 .456.23.84.389.935l-.001-1.859z"/></svg>
+                            </div>
+                            <span class="skill-name">JavaScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M14.5 2.5c0 1.5-.5 2-2 3l-2 2c-1.5 1.5-2 2.5-2 4 0 2 1.5 3.5 3.5 3.5h1v-2h-1c-1 0-1.5-.5-1.5-1.5 0-1 .5-1.5 2-3l2-2c1.5-1.5 2-2.5 2-4 0-1.5-1-2.5-2.5-2.5h-1v2h1zM7.5 21c-1.5 0-2.5-1-2.5-2.5 0-1.5.5-2.5 2-3.5l2-2c1.5-1.5 2.5-2 2.5-4s-1.5-3.5-3.5-3.5h-1v2h1c1 0 1.5.5 1.5 1.5 0 1-.5 1.5-2 3l-2 2c-1.5 1.5-2 2-2 4 0 1.5 1 2.5 2.5 2.5h1v-2h-1z"/></svg>
+                            </div>
+                            <span class="skill-name">React</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 88%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tools Skills -->
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i data-lucide="wrench"></i>
+                        Tools & Frameworks
+                    </h3>
+                    <div class="skill-cards">
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.28 9.52l-3.47 3.47.95.95 3.47-3.47-1-1zm-3.95 3.95l-3.47 3.47.95.95 3.47-3.47-1-1zm1-7.4l-3.47 3.47.95.95 3.47-3.47-1-1zm-3.95 3.95l-3.47 3.47.95.95 3.47-3.47-1-1zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>
+                            </div>
+                            <span class="skill-name">Tailwind CSS</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 88%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.001 4.8c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624C13.666 10.618 15.027 12 18.001 12c3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C16.337 6.182 14.976 4.8 12.001 4.8zm-6 7.2c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624 1.177 1.194 2.538 2.576 5.512 2.576 3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C10.337 13.382 8.976 12 6.001 12z"/></svg>
+                            </div>
+                            <span class="skill-name">SASS/SCSS</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.001 2C17.524 2 22.001 6.477 22.001 12C22.001 17.523 17.524 22 12.001 22C6.478 22 2.001 17.523 2.001 12C2.001 6.477 6.478 2 12.001 2zM8.001 8v8h2v-8H8.001zm6 0v8h2v-8H14.001z"/></svg>
+                            </div>
+                            <span class="skill-name">Git</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.65 14.39L12 22.13 1.35 14.39a.84.84 0 0 1-.3-.94l1.22-3.78 2.44-7.51A.42.42 0 0 1 4.82 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.49h8.1l2.44-7.51A.42.42 0 0 1 18.6 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.51L23 13.45a.84.84 0 0 1-.35.94z"/></svg>
+                            </div>
+                            <span class="skill-name">Figma</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 78%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M11.998 2a9.996 9.996 0 1 0 10 9.996A9.994 9.994 0 0 0 12 2zm6.184 14.963a1.003 1.003 0 0 1-.622 1.173l-.104.06-4.176 2.409a1 1 0 0 1-1.261-.08l-.085-.093-2.409-4.176a1.003 1.003 0 0 1 1.372-1.28l.06.104 1.717 2.976-1.098 1.098-2.976-1.717a1.003 1.003 0 0 1-.256-1.365l.093-.085L12.276 6.26a1.003 1.003 0 0 1 1.365-.256l.085.093 4.176 2.409a1 1 0 0 1 .623 1.172l-.06.104-2.409 4.176 1.098 1.098 2.409-2.409.104.06z"/></svg>
+                            </div>
+                            <span class="skill-name">Webpack</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 72%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                            </div>
+                            <span class="skill-name">Vite</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Other Skills -->
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i data-lucide="layers"></i>
+                        Other Skills
+                    </h3>
+                    <div class="skill-cards">
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4 4h16a2 2 0 012 2v12a2 2 0 01-2 2H4a2 2 0 01-2-2V6a2 2 0 012-2zm0 2v12h16V6H4zm2 2h3v3H6V8zm0 5h3v3H6v-3zm5-5h7v2h-7v-2zm0 3h7v2h-7v-2z"/></svg>
+                            </div>
+                            <span class="skill-name">Responsive Design</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm0 18a8 8 0 110-16 8 8 0 010 16zm1-9h3l-4 4-4-4h3V7h2v4z"/></svg>
+                            </div>
+                            <span class="skill-name">UI/UX Design</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 14H4V6h16v12zM6 10h2v2H6v-2zm0 4h8v2H6v-2zm10 0h2v2h-2v-2zm-6-4h8v2h-8v-2z"/></svg>
+                            </div>
+                            <span class="skill-name">Web Performance</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 82%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"/></svg>
+                            </div>
+                            <span class="skill-name">Web Security</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 70%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">03. Featured Projects</span>
+                <h2 class="section-title">Some Things I've Built</h2>
+            </div>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i data-lucide="shopping-bag"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" aria-label="View Project">
+                                    <i data-lucide="external-link"></i>
+                                </a>
+                                <a href="#" class="project-link" aria-label="View Code">
+                                    <i data-lucide="github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">E-Commerce</span>
+                        <h3 class="project-title">Modern E-Commerce Platform</h3>
+                        <p class="project-description">A full-featured shopping platform with cart functionality, payment integration, and admin dashboard.</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i data-lucide="layout-dashboard"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" aria-label="View Project">
+                                    <i data-lucide="external-link"></i>
+                                </a>
+                                <a href="#" class="project-link" aria-label="View Code">
+                                    <i data-lucide="github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">Dashboard</span>
+                        <h3 class="project-title">Analytics Dashboard</h3>
+                        <p class="project-description">Real-time analytics dashboard with interactive charts, data visualization, and export capabilities.</p>
+                        <div class="project-tech">
+                            <span>Vue.js</span>
+                            <span>D3.js</span>
+                            <span>Firebase</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i data-lucide="pen-tool"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" aria-label="View Project">
+                                    <i data-lucide="external-link"></i>
+                                </a>
+                                <a href="#" class="project-link" aria-label="View Code">
+                                    <i data-lucide="github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">Design Tool</span>
+                        <h3 class="project-title">Design System Generator</h3>
+                        <p class="project-description">A comprehensive design system tool that generates components, tokens, and documentation automatically.</p>
+                        <div class="project-tech">
+                            <span>TypeScript</span>
+                            <span>Figma API</span>
+                            <span>Node.js</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i data-lucide="message-square"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" aria-label="View Project">
+                                    <i data-lucide="external-link"></i>
+                                </a>
+                                <a href="#" class="project-link" aria-label="View Code">
+                                    <i data-lucide="github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">Social Platform</span>
+                        <h3 class="project-title">Social Media Dashboard</h3>
+                        <p class="project-description">A feature-rich social media management tool with scheduling, analytics, and team collaboration.</p>
+                        <div class="project-tech">
+                            <span>Next.js</span>
+                            <span>GraphQL</span>
+                            <span>PostgreSQL</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">04. Get In Touch</span>
+                <h2 class="section-title">Let's Work Together</h2>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <p class="contact-text">
+                        I'm currently available for freelance work and full-time opportunities. 
+                        If you have a project that needs some creative touch, drop me a line!
+                    </p>
+                    <div class="contact-details">
+                        <a href="mailto:bautureagan@gmail.com" class="contact-item">
+                            <i data-lucide="mail"></i>
+                            <span>bautureagan@gmail.com</span>
+                        </a>
+                        <div class="contact-item">
+                            <i data-lucide="map-pin"></i>
+                            <span>Available Worldwide</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/Kraven256" class="social-link" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+                            <i data-lucide="github"></i>
+                        </a>
+                        <a href="https://x.com/waigareagan?s=21" class="social-link" aria-label="Twitter" target="_blank" rel="noopener noreferrer">
+                            <i data-lucide="twitter"></i>
+                        </a>
+<a href="https://wa.me/254745850196" class="social-link" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer">
+                            <i data-lucide="message-circle"></i>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" required placeholder=" ">
+                        <label for="name">Your Name</label>
+                        <div class="input-line"></div>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required placeholder=" ">
+                        <label for="email">Your Email</label>
+                        <div class="input-line"></div>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" required placeholder=" "></textarea>
+                        <label for="message">Your Message</label>
+                        <div class="input-line"></div>
+                    </div>
+<button type="submit" class="btn btn-primary btn-submit" formaction="mailto:bautureagan@gmail.com?subject=Portfolio Contact Form Submission">
+                        <span>Send Message</span>
+                        <i data-lucide="send"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-text">Designed & Built by <span class="highlight">KRAVEN </span></p>
+                <p class="footer-copyright">© 2026 All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="script.js"></script>
+</body>
+</html>
